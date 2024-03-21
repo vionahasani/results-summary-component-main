@@ -1,0 +1,157 @@
+@import url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+
+*{
+    padding: 0;
+}
+body{
+    font-family: 'HankenGrotesk';
+    background-color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    font-weight: 500;
+}
+.container{
+    max-width: 650px;
+}
+.result-summary-component{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+p{
+    margin: 0;
+}
+.your-result{
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 20px;
+    text-align: center;
+    color: hsl(241, 100%, 89%);
+    flex: 1;
+}
+.your-result_inner{
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.your-result_circle-background{
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    width: 11rem;
+    height: 11rem;
+    align-self: center;
+}
+
+.your-result_inner h5{
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.your-result_inner h1{
+    font-size: 4rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 800;
+    padding-top: 40px;
+    margin: 0;
+}
+.your-result_inner h3{
+    color: hsl(0, 0%, 100%);
+    margin: 25px 0px 15px 0px;
+}
+.your-result_inner p{
+    font-size: 17px;
+    padding: 0px 30px;
+    line-height: normal;
+}
+.your-result_circle-background p{
+    margin-top: -8px;
+    font-size: 16px;
+}
+.summary{
+    box-shadow: 3px 2px 15px 0px #80808054;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    flex: 1;
+}
+.summary_inner{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px;
+}
+.summary_inner h5{
+    font-weight: 700;
+    margin-bottom: 22px;
+    color: black; 
+}
+.summary_inner div{
+    margin: 6px 0px;
+    border-radius: 10px;
+    height: 50px;
+}
+.summary-reaction{
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+.summary-reaction p:nth-child(2){
+    color: hsl(0, 100%, 67%);
+}
+.summary-memory{
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+.summary-memory p:nth-child(2){
+    color: hsl(39, 100%, 56%);
+}
+.summary-verbal{
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+.summary-verbal p:nth-child(2){
+    color: hsl(166, 100%, 37%);
+}
+.summary-visual{
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+.summary-visual p:nth-child(2){
+    color: hsl(234, 85%, 45%);
+}
+.summary_inner img{
+    margin: 0px 7px 0px 15px;
+    width: 17px;
+    height: 17px;
+}
+.summary_inner p{
+    font-size: 16px;
+    font-weight: 600;
+}
+.summary-score{
+    color: hsl(240, 1%, 59%);
+    margin-right: 15px;
+}
+.summary-score span{
+    color: hsl(0, 0%, 8%);
+    font-size: 17px;
+    padding-right: 2px;
+}
+.btn{
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    height: 50px;
+    border-radius: 30px;
+    margin-top: 20px;
+    transition: all 2s ease;
+    border: none;
+}
+.btn:hover{
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: hsl(0, 0%, 100%);
+}
+
+@media only screen and (max-width: 400px){
+    .container{
+        padding: 0px;
+    }
+    .result-summary-component{
+        display: flex;
+        flex-direction: column;
+    }
+    .summary{
+        width: 100%;
+    }
+}
